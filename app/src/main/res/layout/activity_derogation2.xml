@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Derogation2">
+    <include layout="@layout/menu"/>
+    <include layout="@layout/footer" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="100"
+        android:layout_marginTop="80dp"
+        android:progressDrawable="@drawable/progress_barre_color"/>
+
+    <RelativeLayout
+        android:id="@+id/DeclarationEvenementIndesirable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borderlefttoprightbottomred"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="2 Traitement evènement indésirable"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/derogation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borderleftrightbeige"
+        android:layout_marginHorizontal="40dp"
+        android:layout_below="@+id/DeclarationEvenementIndesirable1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:text="Documents joints :"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_plus"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginVertical="10dp"/>
+
+<!--        <Button-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:backgroundTint="@color/vert"-->
+<!--            android:text="+"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24dp" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/derogation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/derogation1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/borderleftrightbeige"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borderlefttoprightbottomwhite"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="60dp"
+            android:text="Aucun élément à afficher"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/derogation3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/borderleftrightbeige"
+        android:layout_below="@+id/derogation2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:padding="10dp"
+            android:text="Historique dérogations :"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_below"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"/>
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/floatingActionButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:clickable="true"-->
+<!--            app:srcCompat="@android:drawable/arrow_down_float"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="20dp"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/derogation4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/derogation3"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/borderleftbottomrightgrey"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borderlefttoprightbottomwhite"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="60dp"
+            android:text="Aucun élément à afficher"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="10dp"
+        android:layout_below="@+id/derogation4"
+        android:layout_marginHorizontal="40dp">
+
+        <Button
+            android:id="@+id/Precedent12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/bleu4"
+            android:text="Précédent"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/Suivant13"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/bleu4"
+            android:text="Suivant"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

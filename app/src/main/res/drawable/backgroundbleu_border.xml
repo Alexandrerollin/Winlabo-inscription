@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <!-- Ceci est le trait que vous souhaitez définir -->
+    <stroke android:width="2dp"
+        android:color="#000000"/> <!-- Couleur de la bordure -->
+
+    <!-- Optionnel, arrondir vos coins -->
+    <corners android:bottomLeftRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topRightRadius="5dp" />
+
+    <!-- Optionnel, remplir le reste de votre fond avec une couleur ou un dégradé, utilisez transparent si vous ne voulez afficher que le trait -->
+    <solid android:color="@color/bleu1"/> <!-- Couleur de fond -->
+</shape>

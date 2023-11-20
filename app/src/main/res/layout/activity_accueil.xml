@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Accueil">
+    <include layout="@layout/menu"/>
+
+    <include layout="@layout/footer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/backgroundred_border"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="135dp">
+
+        <ImageView
+            android:id="@+id/Declarerunevenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_plus"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/btnNouvelEvenement"-->
+<!--            android:layout_width="63dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginVertical="10dp"-->
+<!--            android:backgroundTint="@color/vert"-->
+<!--            android:text="+"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="32dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="20dp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="Nouvel évènement indésirable"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
