@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <include layout="@layout/menuconnexion"/>
+    <include layout="@layout/footer"/>
+
+    <RelativeLayout
+        android:id="@+id/Seconnecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Inscription"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/backgroundbleu_border"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/Seconnecter">
+
+        <TextView
+            android:id="@+id/DMDUtilisateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:text="Nom d'utilisateur :"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/Utilisateur"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/DMDUtilisateur"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:hint="Nom d'utilisateur"
+            android:padding="10dp"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/DMDEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Utilisateur"
+            android:padding="10dp"
+            android:text="Email :"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="10dp"/>
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DMDEmail"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/DMDMDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Email"
+            android:padding="10dp"
+            android:text="Mot de passe :"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/MDP1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:hint="Mot de passe"
+            android:padding="10dp"
+            android:textColor="@color/grey"
+            android:layout_below="@+id/DMDMDP"/>
+
+        <EditText
+            android:id="@+id/MDP2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:hint="Retapez mot de passe"
+            android:padding="10dp"
+            android:textColor="@color/grey"
+            android:layout_below="@+id/MDP1"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/Inscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MDP2"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Inscription"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>
