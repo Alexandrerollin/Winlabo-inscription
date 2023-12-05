@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Winlabo"
         tools:targetApi="31">
         <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
             android:name=".Inscription"
             android:exported="false" />
         <activity
