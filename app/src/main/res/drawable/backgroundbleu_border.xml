@@ -12,5 +12,5 @@
         android:topRightRadius="5dp" />
 
     <!-- Optionnel, remplir le reste de votre fond avec une couleur ou un dégradé, utilisez transparent si vous ne voulez afficher que le trait -->
-    <solid android:color="@color/bleu1"/> <!-- Couleur de fond -->
+    <solid android:color="@color/bleu4"/> <!-- Couleur de fond -->
 </shape>

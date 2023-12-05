@@ -14,7 +14,6 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:max="100"
         android:progress="80"
-        android:layout_marginTop="80dp"
         android:progressDrawable="@drawable/progress_barre_color"/>
 
     <RelativeLayout
