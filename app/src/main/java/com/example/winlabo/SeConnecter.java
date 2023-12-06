@@ -1,5 +1,6 @@
 package com.example.winlabo;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,8 @@ public class SeConnecter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_se_connecter);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bleu4)));
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_center);
 
         Intent nextIntent = new Intent(SeConnecter.this, Accueil.class);
 

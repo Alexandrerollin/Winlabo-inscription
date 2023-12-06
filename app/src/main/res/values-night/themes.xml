@@ -1,6 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Winlabo" parent="Theme.Material3.DayNight">
+        <item name="android:actionBarSize">90dp</item>
+        <item name="actionBarSize">90dp</item>
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>

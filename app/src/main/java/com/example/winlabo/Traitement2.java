@@ -1,6 +1,7 @@
 package com.example.winlabo;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -40,6 +41,8 @@ public class Traitement2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traitement2);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bleu4)));
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_left);
 
         Intent previousIntent = new Intent(Traitement2.this, Traitement1.class);
         Intent nextIntent = new Intent(Traitement2.this, Traitement3.class);
