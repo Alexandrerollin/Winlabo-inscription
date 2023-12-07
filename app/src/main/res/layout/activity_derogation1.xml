@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:id="@+id/dero1"
     tools:context=".Derogation1">
 <!--    <include layout="@layout/activity_menu"/>-->
     <include layout="@layout/footer"/>
@@ -48,34 +49,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
             android:padding="10dp"
             android:text="Dérogation"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/derogation2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/derogation1"
-        android:layout_marginHorizontal="40dp"
-        android:background="@drawable/borderleftrightbeige"
-        android:layout_centerHorizontal="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:padding="10dp"
-            android:text="Dérogations :"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="30dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -83,8 +63,40 @@
             android:src="@drawable/icons_below"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="100dp"
+            android:layout_marginEnd="50dp"
             android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/derogation2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/derogation1"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:background="@drawable/borderleftrightbeige"-->
+<!--        android:layout_centerHorizontal="true">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Dérogations :"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="30dp"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/icons_below"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginEnd="100dp"-->
+<!--            android:layout_marginBottom="20dp"/>-->
 
 <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
 <!--            android:id="@+id/floatingActionButton"-->
@@ -96,16 +108,16 @@
 <!--            android:layout_marginBottom="30dp"-->
 <!--            android:clickable="true"-->
 <!--            app:srcCompat="@android:drawable/arrow_down_float" />-->
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
     <RelativeLayout
-        android:id="@+id/derogation3"
+        android:id="@+id/derogation2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:paddingBottom="40dp"
         android:background="@drawable/borderleftbottomrightgrey"
-        android:layout_below="@+id/derogation2"
+        android:layout_below="@+id/derogation1"
         android:layout_marginHorizontal="40dp">
 
         <EditText
@@ -126,7 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:paddingVertical="10dp"
-        android:layout_below="@+id/derogation3"
+        android:layout_below="@+id/derogation2"
         android:layout_marginHorizontal="40dp">
 
         <Button

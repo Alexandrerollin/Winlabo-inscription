@@ -5,12 +5,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class Accueil extends AppCompatActivity {
@@ -22,37 +24,48 @@ public class Accueil extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item)  {
 
-        if(item.getItemId() == R.id.profile){
-            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (item.getItemId() == R.id.deconnexion) {
-            Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
-            return true;
-        }else {
-            return super.onOptionsItemSelected(item);
+            if(item.getItemId() == R.id.profile){
+                Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+                return true;
+            } else if (item.getItemId() == R.id.deconnexion) {
+                Intent intent = new Intent(Accueil.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+//                Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
+                return true;
+            }else {
+                return super.onOptionsItemSelected(item);
+            }
         }
-    }
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//
-//        switch (item.getItemId()){
-//            case R.id.profile:
-//                Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
+
+//        if(item.getItemId() == R.id.profile){
+//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+//            return true;
+//        } else if (item.getItemId() == R.id.deconnexion) {
+//            finish();
+//            Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
+//            return true;
+//        }else {
+//            return super.onOptionsItemSelected(item);
 //        }
-//
-//        return super.onOptionsItemSelected(item);
 //    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
+
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.bleu4)));
+
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.action_bar_left);
+
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.accueil);
+        layout.setBackgroundColor(Color.WHITE);
 
         Intent intent = new Intent(Accueil.this, DeclarationEvenement1.class);
 

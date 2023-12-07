@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:id="@+id/dero2"
     tools:context=".Derogation2">
 <!--    <include layout="@layout/activity_menu"/>-->
     <include layout="@layout/footer" />
@@ -23,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/borderlefttoprightbottomred"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="130dp">
+        android:layout_marginTop="50dp">
 
         <TextView
             android:layout_width="wrap_content"

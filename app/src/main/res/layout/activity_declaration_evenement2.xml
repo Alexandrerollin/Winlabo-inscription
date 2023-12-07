@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:id="@+id/dec2"
     tools:context=".DeclarationEvenement2">
 <!--    <include layout="@layout/activity_menu"/>-->
     <include layout="@layout/footer"/>
@@ -63,7 +64,7 @@
             android:src="@drawable/icons_below"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="100dp"/>
+            android:layout_marginEnd="50dp"/>
 
 <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
 <!--            android:id="@+id/floatingActionButton"-->
