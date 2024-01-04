@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:id="@+id/seco"
-    tools:context=".MainActivity">
+    tools:context=".SeConnecter">
 <!--    <include layout="@layout/menuconnexion"/>-->
     <include layout="@layout/footer"/>
 
@@ -47,6 +47,7 @@
 
         <EditText
             android:id="@+id/Utilisateur"
+            android:text="alex"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -77,6 +78,8 @@
             android:layout_marginStart="10dp"
             android:background="@color/white"
             android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:text="Pezenas"
             android:padding="10dp"
             android:textColor="@color/grey" />
 

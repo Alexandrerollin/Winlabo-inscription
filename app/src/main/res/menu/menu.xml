@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/profile"
+    <item android:id="@+id/profil"
         android:orderInCategory="100"
         app:showAsAction="never"
-        android:title="Profile"/>
+        android:title="Profil"/>
 
     <item android:id="@+id/deconnexion"
         android:orderInCategory="100"

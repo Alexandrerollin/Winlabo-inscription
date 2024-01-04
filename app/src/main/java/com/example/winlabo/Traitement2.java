@@ -27,7 +27,7 @@ public class Traitement2 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(item.getItemId() == R.id.profile){
+        if(item.getItemId() == R.id.profil){
             Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
             return true;
         } else if (item.getItemId() == R.id.deconnexion) {

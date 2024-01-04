@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -23,22 +24,51 @@ public class Accueil extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item)  {
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item)  {
+//
+//            if(item.getItemId() == R.id.profile){
+//                Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+//                return true;
+//            } else if (item.getItemId() == R.id.deconnexion) {
+//                Intent intent = new Intent(Accueil.this, MainActivity.class);
+//                startActivity(intent);
+//                finish();
+////                Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
+//                return true;
+//            }else {
+//                return super.onOptionsItemSelected(item);
+//            }
+//        }
 
-            if(item.getItemId() == R.id.profile){
-                Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-                return true;
-            } else if (item.getItemId() == R.id.deconnexion) {
-                Intent intent = new Intent(Accueil.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-//                Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
-                return true;
-            }else {
-                return super.onOptionsItemSelected(item);
-            }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.profil) {
+            // Gérer le clic sur "Profil"
+            return true;
+        } else if (itemId == R.id.deconnexion) {
+            // Gérer le clic sur "Déconnexion"
+            deconnecterUtilisateur();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void deconnecterUtilisateur() {
+        // Effacer les données de session (SharedPreferences, etc.)
+        SharedPreferences sharedPreferences = getSharedPreferences("session", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
+
+        // Rediriger vers MainActivity ou une autre activité d'accueil
+        Intent intent = new Intent(Accueil.this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Fermer l'activité actuelle
+    }
 
 
 
