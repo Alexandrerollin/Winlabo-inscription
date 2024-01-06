@@ -66,8 +66,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:paddingTop="20dp"
-        android:paddingBottom="30dp"
         android:background="@drawable/borderleftbottomrightgrey"
         android:layout_below="@+id/DeclarationSite"
         android:layout_marginHorizontal="40dp">

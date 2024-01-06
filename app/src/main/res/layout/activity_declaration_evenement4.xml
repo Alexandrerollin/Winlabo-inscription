@@ -69,6 +69,7 @@
         android:layout_marginHorizontal="40dp">
 
         <EditText
+            android:id="@+id/Descriptifevenement"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:background="@drawable/borderlefttoprightbottomwhite"

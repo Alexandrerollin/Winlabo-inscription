@@ -49,66 +49,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
             android:padding="10dp"
             android:text="Dérogation"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icons_below"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="20dp"/>
-
     </RelativeLayout>
-
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/derogation2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/derogation1"-->
-<!--        android:layout_marginHorizontal="40dp"-->
-<!--        android:background="@drawable/borderleftrightbeige"-->
-<!--        android:layout_centerHorizontal="true">-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentStart="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="Dérogations :"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="18dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:layout_marginLeft="30dp"/>-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/icons_below"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_marginEnd="100dp"-->
-<!--            android:layout_marginBottom="20dp"/>-->
-
-<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--            android:id="@+id/floatingActionButton"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_marginRight="40dp"-->
-<!--            android:layout_marginBottom="30dp"-->
-<!--            android:clickable="true"-->
-<!--            app:srcCompat="@android:drawable/arrow_down_float" />-->
-<!--    </RelativeLayout>-->
 
     <RelativeLayout
         android:id="@+id/derogation2"

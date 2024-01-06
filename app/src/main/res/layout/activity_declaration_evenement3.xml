@@ -52,31 +52,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_centerHorizontal="true"
             android:padding="10dp"
             android:text="Catégorie :"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icons_below"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="40dp"/>
-
-<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--            android:id="@+id/floatingActionButton"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:clickable="true"-->
-<!--            app:srcCompat="@android:drawable/arrow_down_float"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginRight="40dp"/>-->
     </RelativeLayout>
-
 
     <RelativeLayout
         android:id="@+id/lesite"
@@ -85,17 +67,16 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/DeclarationSite"
         android:layout_marginHorizontal="40dp"
-        android:background="@drawable/borderleftbottomrightgrey"
-        android:paddingTop="20dp"
-        android:paddingBottom="30dp">
+        android:background="@drawable/borderleftbottomrightgrey">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borderlefttoprightbottomwhite"
-            android:paddingVertical="20dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginHorizontal="40dp"/>
+        <Spinner
+            android:id="@+id/spinnerCategorie"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="16dp" />
 
     </RelativeLayout>
 

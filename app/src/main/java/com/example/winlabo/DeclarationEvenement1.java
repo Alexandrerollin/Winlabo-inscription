@@ -69,7 +69,6 @@ public class DeclarationEvenement1 extends AppCompatActivity {
                         Log.d("TAG", "Nom du laboratoire : " + site.getNOM_DU_LABORATOIRE());
                     }
 
-
                     // Initialisation du Spinner avec la liste des noms de laboratoires
                     // On construit la liste déroulante à partir de notre tableau de sites laboratoireNames
                     Spinner spinnerLaboratoires = findViewById(R.id.spinnerLaboratoires);
