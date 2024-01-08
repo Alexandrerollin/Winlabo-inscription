@@ -47,7 +47,7 @@ public class DeclarationEvenement1 extends AppCompatActivity {
         String url = "http://mobile.winqual.com/getsite.php";
 
         // Affichage d'un message et journalisation du clic sur ImageView
-        Toast.makeText(DeclarationEvenement1.this, "ImageView cliqué!", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(DeclarationEvenement1.this, "ImageView cliqué!", Toast.LENGTH_SHORT).show();
         Log.d("TAG", "ImageView cliqué");
 
         // Tâche asynchrone pour récupérer les données du serveur

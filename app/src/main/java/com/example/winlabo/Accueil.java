@@ -24,23 +24,6 @@ public class Accueil extends AppCompatActivity {
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item)  {
-//
-//            if(item.getItemId() == R.id.profile){
-//                Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-//                return true;
-//            } else if (item.getItemId() == R.id.deconnexion) {
-//                Intent intent = new Intent(Accueil.this, MainActivity.class);
-//                startActivity(intent);
-//                finish();
-////                Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
-//                return true;
-//            }else {
-//                return super.onOptionsItemSelected(item);
-//            }
-//        }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
@@ -69,20 +52,6 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
         finish(); // Fermer l'activité actuelle
     }
-
-
-
-//        if(item.getItemId() == R.id.profile){
-//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-//            return true;
-//        } else if (item.getItemId() == R.id.deconnexion) {
-//            finish();
-//            Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
-//            return true;
-//        }else {
-//            return super.onOptionsItemSelected(item);
-//        }
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
