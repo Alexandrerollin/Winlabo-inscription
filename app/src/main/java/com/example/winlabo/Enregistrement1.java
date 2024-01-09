@@ -1,5 +1,7 @@
 package com.example.winlabo;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +10,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,10 +30,11 @@ public class Enregistrement1 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(item.getItemId() == R.id.profil){
-            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (item.getItemId() == R.id.deconnexion) {
+//        if(item.getItemId() == R.id.profil){
+//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+//            return true;
+//        } else
+            if (item.getItemId() == R.id.deconnexion) {
             Intent intent = new Intent(Enregistrement1.this, MainActivity.class);
             startActivity(intent);
             finish();
@@ -40,17 +44,6 @@ public class Enregistrement1 extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
     }
-
-//        if(item.getItemId() == R.id.profile){
-//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-//            return true;
-//        } else if (item.getItemId() == R.id.deconnexion) {
-//            Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
-//            return true;
-//        }else {
-//            return super.onOptionsItemSelected(item);
-//        }
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +59,7 @@ public class Enregistrement1 extends AppCompatActivity {
         layout.setBackgroundColor(Color.WHITE);
 
         Intent previousIntent = new Intent(Enregistrement1.this, Traitement3.class);
-        Intent PreviousIntent2 = new Intent(Enregistrement1.this, Derogation2.class);
+        Intent PreviousIntent2 = new Intent(Enregistrement1.this, Derogation1.class);
         Intent NextIntent = new Intent(Enregistrement1.this, Enregistrement2.class);
 
         String previousActivity = getIntent().getStringExtra("previousActivity");
@@ -75,9 +68,10 @@ public class Enregistrement1 extends AppCompatActivity {
         previousButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "valeur previous activity: " + previousActivity);
                 if ("Traitement3".equals(previousActivity)) {
                     startActivity(previousIntent);
-                } else if ("Derogation2".equals(previousActivity)) {
+                } else if ("Derogation1".equals(previousActivity)) {
                     startActivity(PreviousIntent2);
                 }
             }

@@ -20,7 +20,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -88,15 +87,16 @@ public class DeclarationEvenement3 extends AppCompatActivity {
                     /**
                      Vérifie si l'idCategorie récupéré des préférences partagées n'est pas égal
                      à zéro. S'il n'est pas égal à zéro, cela signifie qu'un identifiant de categorie valide a été stocké
-                     précédemment. Ensuite, il parcourt les éléments de l'adaptateur associé au Spinner (spinnerProcessus) pour
-                     trouver l'élément dont l'ID de processus correspond à l'idProcessus récupéré. Une fois trouvé, il définit
+                     précédemment. Ensuite, il parcourt les éléments de l'adaptateur associé au Spinner (spinnerCategorie) pour
+                     trouver l'élément dont l'ID de catégorie correspond à l'idProcessus récupéré. Une fois trouvé, il définit
                      la sélection du Spinner sur cet élément, assurant ainsi que l'élément correspondant à l'idProcessus est
                      pré-sélectionné dans la liste déroulante.
                      */
+                    Log.d(TAG, "idCatégorie : " + idCategorie);
                     if (idCategorie != 0) {
                         for (int i = 0; i < adapter.getCount(); i++) {
                             Categorie categorie = adapter.getItem(i);
-                            if (categorie.getID_LINUX_SMQ_PROCESSUS_ACTIVITES() == idCategorie) {
+                            if (categorie.getID_LINUX_SMQ_PROCESSUS_ACTIVITE() == idCategorie) {
                                 spinnerCategorie.setSelection(i);
                             }
                         }
@@ -109,7 +109,7 @@ public class DeclarationEvenement3 extends AppCompatActivity {
                             // Récupération de l'élément sélectionné dans le Spinner
                             Categorie selectedSite = (Categorie) parentView.getItemAtPosition(position);
 
-                            // Sauvegardez le nom du processus sélectionné dans les préférences partagées
+                            // Sauvegardez le nom de la catégorie sélectionné dans les préférences partagées
                             SharedPreferences sharedPreferences = getSharedPreferences("session", MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             /**
@@ -119,7 +119,8 @@ public class DeclarationEvenement3 extends AppCompatActivity {
                              aux préférences partagées de manière asynchrone. En résumé, cela permet de mémoriser l'ID de la catégorie sélectionné
                              pour une utilisation ultérieure, par exemple, afin de pré-sélectionner la même catégorie lorsqu'on revient sur cette activité.
                              */
-                            editor.putInt("idCategorie", selectedSite.getID_LINUX_SMQ_PROCESSUS_ACTIVITES());
+                            Log.d(TAG, "blabla: " + selectedSite.getID_LINUX_SMQ_PROCESSUS_ACTIVITE());
+                            editor.putInt("idCategorie", selectedSite.getID_LINUX_SMQ_PROCESSUS_ACTIVITE());
                             editor.apply();
                         }
 
@@ -144,10 +145,11 @@ public class DeclarationEvenement3 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(item.getItemId() == R.id.profil){
-            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (item.getItemId() == R.id.deconnexion) {
+//        if(item.getItemId() == R.id.profil){
+//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+//            return true;
+//        } else
+            if (item.getItemId() == R.id.deconnexion) {
             Intent intent = new Intent(DeclarationEvenement3.this, MainActivity.class);
             startActivity(intent);
             finish();

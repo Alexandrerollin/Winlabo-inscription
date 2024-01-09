@@ -1,15 +1,15 @@
 package com.example.winlabo;
 
 public class Categorie {
-    private int ID_LINUX_SMQ_PROCESSUS_ACTIVITES;
+    private int ID_LINUX_SMQ_PROCESSUS_ACTIVITE;
     private String LIBELLE;
 
-    public int getID_LINUX_SMQ_PROCESSUS_ACTIVITES() {
-        return ID_LINUX_SMQ_PROCESSUS_ACTIVITES;
+    public int getID_LINUX_SMQ_PROCESSUS_ACTIVITE() {
+        return ID_LINUX_SMQ_PROCESSUS_ACTIVITE;
     }
 
-    public void setID_LINUX_SMQ_PROCESSUS_ACTIVITES(int ID_LINUX_SMQ_PROCESSUS_ACTIVITES) {
-        this.ID_LINUX_SMQ_PROCESSUS_ACTIVITES = ID_LINUX_SMQ_PROCESSUS_ACTIVITES;
+    public void setID_LINUX_SMQ_PROCESSUS_ACTIVITE(int ID_LINUX_SMQ_PROCESSUS_ACTIVITE) {
+        this.ID_LINUX_SMQ_PROCESSUS_ACTIVITE = ID_LINUX_SMQ_PROCESSUS_ACTIVITE;
     }
 
     public String getLIBELLE() {
@@ -20,7 +20,7 @@ public class Categorie {
         this.LIBELLE = LIBELLE;
     }
     public Categorie(int ID_LINUX_SMQ_PROCESSUS_ACTIVITES, String LIBELLE) {
-        this.ID_LINUX_SMQ_PROCESSUS_ACTIVITES = ID_LINUX_SMQ_PROCESSUS_ACTIVITES;
+        this.ID_LINUX_SMQ_PROCESSUS_ACTIVITE = ID_LINUX_SMQ_PROCESSUS_ACTIVITES;
         this.LIBELLE = LIBELLE;
     }
     @Override

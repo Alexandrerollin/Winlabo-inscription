@@ -28,10 +28,11 @@ public class Accueil extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
 
-        if (itemId == R.id.profil) {
-            // Gérer le clic sur "Profil"
-            return true;
-        } else if (itemId == R.id.deconnexion) {
+//        if (itemId == R.id.profil) {
+//            // Gérer le clic sur "Profil"
+//            return true;
+//        } else
+            if (itemId == R.id.deconnexion) {
             // Gérer le clic sur "Déconnexion"
             deconnecterUtilisateur();
             return true;

@@ -32,10 +32,11 @@ public class Derogation1 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(item.getItemId() == R.id.profil){
-            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (item.getItemId() == R.id.deconnexion) {
+//        if(item.getItemId() == R.id.profil){
+//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+//            return true;
+//        } else
+            if (item.getItemId() == R.id.deconnexion) {
             Intent intent = new Intent(Derogation1.this, MainActivity.class);
             startActivity(intent);
             finish();
@@ -71,7 +72,9 @@ public class Derogation1 extends AppCompatActivity {
         layout.setBackgroundColor(Color.WHITE);
 
         Intent previousIntent = new Intent(Derogation1.this, ChoixTraitementDerogation.class);
-        Intent nextIntent = new Intent(Derogation1.this, Derogation2.class);
+        Intent nextIntent = new Intent(Derogation1.this, Enregistrement1.class);
+        nextIntent.putExtra("previousActivity", "Derogation1");
+
 
         Button previousButton = (Button) findViewById(R.id.Precedent11);
 

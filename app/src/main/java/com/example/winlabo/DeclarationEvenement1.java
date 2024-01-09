@@ -122,10 +122,11 @@ public class DeclarationEvenement1 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Gestion des actions du menu
-        if (item.getItemId() == R.id.profil) {
-            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (item.getItemId() == R.id.deconnexion) {
+//        if (item.getItemId() == R.id.profil) {
+//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
+//            return true;
+//        } else
+            if (item.getItemId() == R.id.deconnexion) {
             // Redirection vers l'activité MainActivity lors de la déconnexion
             Intent intent = new Intent(DeclarationEvenement1.this, MainActivity.class);
             startActivity(intent);
