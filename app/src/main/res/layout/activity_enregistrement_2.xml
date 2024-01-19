@@ -48,13 +48,13 @@
         android:layout_below="@+id/DeclarationEvenementIndesirable1">
 
         <TextView
+            android:id="@+id/textviewenregistrement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/borderlefttoprightbottomwhite"
-            android:paddingBottom="60dp"
-            android:textColor="@color/black" />
+            android:paddingBottom="60dp"/>
     </RelativeLayout>
 
 

@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Enregistrement2 extends AppCompatActivity {
@@ -42,17 +43,6 @@ public class Enregistrement2 extends AppCompatActivity {
         }
     }
 
-//        if(item.getItemId() == R.id.profile){
-//            Toast.makeText(this, "Profile sélectionné", Toast.LENGTH_SHORT).show();
-//            return true;
-//        } else if (item.getItemId() == R.id.deconnexion) {
-//            Toast.makeText(this, "Deconnexion sélectionné", Toast.LENGTH_SHORT).show();
-//            return true;
-//        }else {
-//            return super.onOptionsItemSelected(item);
-//        }
-//    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,5 +65,19 @@ public class Enregistrement2 extends AppCompatActivity {
                 startActivity(previousIntent);
             }
         });
+
+        // Obtenir l'intent actuel
+        Intent intent = getIntent();
+
+        // Obtenir les données supplémentaires de l'intent
+        String ref = intent.getStringExtra("ref");
+//        String error = intent.getStringExtra("erreur");
+
+        // Utiliser les données récupérées
+        TextView refTextView = findViewById(R.id.textviewenregistrement);
+        refTextView.setText(ref);
+
+//        TextView errorTextView = findViewById(R.id.textviewenregistrement);
+//        errorTextView.setText(error);
     }
 }
